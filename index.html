@@ -24,16 +24,20 @@
 <body>
 
 <h1>Privacy Policy for Shadow Weaver</h1>
-<p class="updated">Last updated: 11 July, 2026</p>
+<p class="updated">Last updated: 22 July, 2026</p>
 
 <p>
   This Privacy Policy explains how PsychoReaper ("we," "us," or "our")
   handles information in connection with the mobile game Shadow Weaver
-  (the "App"). Shadow Weaver is designed to be playable entirely offline
-  and does not require an account. The App includes one optional,
-  opt-in online feature — a leaderboard — described below. Everything
-  else about the App (progress, currency, upgrades, settings) stays on
-  your device only.
+  (the "App"). Shadow Weaver does not require creating an account to
+  play. It does require choosing a display name the first time you open
+  it — this is used only for the public leaderboard, described below,
+  and is not a real-identity account. Separately, the App offers a
+  fully optional way to back up your progress by linking a Google
+  account. Neither the display name nor the optional account backup can
+  ever see your device's underlying game data beyond what's described
+  in this policy, and both can be deleted at any time — see "Your
+  Rights" below for how.
 </p>
 
 <h2>Information We Collect</h2>
@@ -41,37 +45,90 @@
 <h3 style="font-size:1.05em; margin-top:1.2em;">Local, on-device data (always)</h3>
 <p>
   Shadow Weaver stores your game progress (levels completed, in-game
-  currency, upgrade choices, and settings such as colour-blind mode)
+  currency, upgrade choices, and settings)
   <strong>locally on your device</strong>, using standard device
-  storage. This data is never transmitted to us, and we do not have
-  access to it. Uninstalling the App removes this data.
+  storage. Uninstalling the App removes this data. Your chosen display
+  name and the stats tied to it (see "Leaderboard data" below) are also
+  saved locally first and sync to our backend automatically once the
+  device is online — see that section for exactly what that involves.
+  If you additionally link a Google account (see "Account backup data"
+  below), a full copy of your local progress is backed up to our cloud
+  storage as well.
 </p>
 
-<h3 style="font-size:1.05em; margin-top:1.2em;">Leaderboard data (optional, only if you choose to join)</h3>
+<h3 style="font-size:1.05em; margin-top:1.2em;">Leaderboard data (a display name is required; the leaderboard itself is public)</h3>
 <p>
-  The App includes an optional online leaderboard, ranked by an in-game
-  currency ("Glimmer Dust"). It is entirely opt-in: the App is fully
-  playable offline, and you can always choose "Skip" instead of joining.
+  The first time you open the App, you'll be asked to choose a display
+  name. This step is required and has no "skip" option — every player
+  picks a name before reaching the main menu, whether or not the device
+  has an internet connection at that moment. We do not ask for your
+  real name, email address, phone number, or any other personally
+  identifying information — only the display name you choose to type
+  in, which can be anything you like, and which you can change at any
+  time afterward from your in-app profile.
 </p>
 <p>
-  If you choose to join the leaderboard, the App will ask you to enter a
-  display name. That name, together with your Glimmer Dust score, is
-  sent to and stored on our backend (Google Firebase / Cloud Firestore)
-  so it can be shown on the public leaderboard alongside other players'
-  entries. We do not ask for your real name, email address, phone
-  number, or any other personally identifying information — only the
-  display name you choose to type in, which can be anything you like.
+  Your chosen name is saved locally on your device immediately,
+  regardless of connectivity. If the device is online at that moment,
+  the App also registers that name — together with your Glimmer Dust
+  total, levels completed, and your chosen avatar, profile border, and
+  bio (if you've set one) — on our backend (Google Firebase / Cloud
+  Firestore), so it can appear on the public leaderboard. If the device
+  is offline, this registration is simply queued and happens
+  automatically and silently the next time the App detects a
+  connection — for example, when you open the leaderboard, open your
+  profile, or otherwise reach a point in the App that checks for
+  internet access. The same applies to any later change to your name,
+  avatar, border, bio, or score: saved locally right away, pushed to
+  the leaderboard automatically once the device is online.
 </p>
 <p>
   The leaderboard is public: any player using the leaderboard feature
-  can see the display names and scores of other participating players.
-  Please don't use your real name or any identifying information as
-  your display name if you'd prefer it not to be publicly visible.
+  can see the display names, scores, levels completed, and chosen
+  avatar/border/bio of other participating players. Please don't use
+  your real name or any identifying information as your display name
+  or bio if you'd prefer it not to be publicly visible.
 </p>
 <p>
-  We do not currently offer an in-app way to delete a leaderboard entry
-  once created. If you'd like a leaderboard entry removed, contact us
-  using the details at the bottom of this page and we will remove it.
+  You can permanently delete your leaderboard entry at any time from
+  Settings inside the App — this is part of "Delete Progress" (if you
+  haven't linked a Google account) or "Delete Account" (if you have),
+  both described further below. Deleting it removes your name, score,
+  and profile details from our backend; the only thing that otherwise
+  removes a leaderboard entry is you deleting it yourself.
+</p>
+
+<h3 style="font-size:1.05em; margin-top:1.2em;">Account backup data (optional, only if you choose to link)</h3>
+<p>
+  Separately from the required display name above, the App offers an
+  optional way to back up your local game progress by linking a Google
+  account. Every player already has a leaderboard-eligible name by
+  default (see above); linking a Google account is a separate, optional
+  step that adds a cloud backup of your progress on top of that — it
+  does not change whether you appear on the leaderboard. Linking is
+  never required to play the App.
+</p>
+<p>
+  If you choose to link a Google account, we use Google Sign-In to
+  identify you, and we store a copy of your local game progress (levels
+  completed, in-game currency, upgrade choices, and settings) in our
+  backend (Google Firebase / Cloud Firestore), associated with your
+  Google account ID. This lets you restore your progress if you
+  reinstall the App or switch devices. We do not access your Google
+  contacts, email content, files, or anything else in your Google
+  account beyond the basic account identifier needed to link your
+  save data to you.
+</p>
+<p>
+  You can unlink or delete this backup at any time from Settings inside
+  the App, whether or not you've ever synced progress from it — deleting
+  it removes your cloud-stored progress from our backend. This is
+  independent of your local, on-device progress and of your leaderboard
+  entry; deleting your account backup does not by itself delete your
+  leaderboard entry. Deleting your account entirely (the "Delete
+  Account" option, available once linked) does delete both your cloud
+  backup and your leaderboard entry together, in one step — see the
+  section above.
 </p>
 
 <h2>Third-Party Services</h2>
@@ -84,10 +141,10 @@
   not by us.
 </p>
 <p>
-  The optional leaderboard feature is powered by Google Firebase
-  (Cloud Firestore), which stores the display name and score data
-  described above on our behalf. Firebase's handling of this data is
-  governed by
+  Both the leaderboard and the optional account backup are powered by
+  Google Firebase (Cloud Firestore for stored data, and Google Sign-In
+  for the optional account link), which stores the data described
+  above on our behalf. Firebase's handling of this data is governed by
   <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google's Firebase privacy and security terms</a>
   in addition to this policy. Data sent to Firebase is encrypted in
   transit.
@@ -104,44 +161,56 @@
 <p>
   Shadow Weaver is not directed at children under the age of 13, and we
   do not knowingly collect personal information from children under 13.
-  The optional leaderboard only collects a self-chosen display name and
-  score — not a real name or other identifying information — but it is
-  still not intended for use by children under 13. If we become aware
-  that a child under 13 has joined the leaderboard or otherwise provided
-  us with personal information (for example, through a support email),
-  we will take steps to delete it.
+  The display name required to use the App, and the score/progress data
+  tied to it on the leaderboard, are self-chosen and gameplay-derived —
+  not a real name or other identifying information — but the App is
+  still not intended for use by children under 13. The optional account
+  backup feature additionally requires a Google account, which Google's
+  own terms restrict for children under 13. If we become aware that a
+  child under 13 has used the App, linked an account, or otherwise
+  provided us with personal information (for example, through a support
+  email), we will take steps to delete it.
 </p>
 
 <h2>Your Rights (California — CCPA/CPRA, and CalOPPA)</h2>
 <p>
-  Most of the App's data never leaves your device, so there is
-  generally nothing to request access to, correct, or delete under the
-  California Consumer Privacy Act (CCPA) and California Privacy Rights
-  Act (CPRA). If you have joined the optional leaderboard, you may
-  contact us using the details below to request access to, correction
-  of, or deletion of your leaderboard display name and score.
+  Most of the App's data — everything except your leaderboard name/stats
+  and, if you choose to link one, your account backup — never leaves
+  your device, so there is generally nothing to request access to,
+  correct, or delete under the California Consumer Privacy Act (CCPA)
+  and California Privacy Rights Act (CPRA) for that data. You can
+  delete your leaderboard entry and/or your account backup at any time
+  from Settings inside the App, or contact us using the details below
+  to request access to, correction of, or deletion of that data.
 </p>
 
 <h2>Your Rights (EEA/UK — GDPR)</h2>
 <p>
   For users in the European Economic Area and United Kingdom: game
-  progress and settings generated by simply playing never leave your
-  device, so most GDPR data subject rights (access, rectification,
-  erasure, portability) do not apply to that information. If you have
-  joined the optional leaderboard, the display name and score
-  associated with your entry is personal data processed by us via
-  Firebase, and you may contact us to request access, correction,
-  erasure, or portability of that data.
+  progress and settings generated by simply playing stay on your
+  device and are not processed by us, so most GDPR data subject rights
+  (access, rectification, erasure, portability) do not apply to that
+  information. Your display name and the score/progress data tied to
+  it on the leaderboard is personal data processed by us via Firebase.
+  If you have linked the optional account backup, your Google account
+  ID and backed-up progress are also personal data processed by us via
+  Firebase. You can delete your leaderboard entry and/or your account
+  backup at any time from Settings inside the App, or contact us to
+  request access, correction, erasure, or portability of that data.
 </p>
 
 <h2>Data Retention</h2>
 <p>
   Locally stored game data persists only on your device until you
-  uninstall the App or clear its data through your device settings. We
-  do not retain a copy of this data ourselves. If you join the optional
-  leaderboard, your display name and score are retained on our Firebase
-  backend until you request deletion (see above) or until the
-  leaderboard feature is discontinued.
+  uninstall the App or clear its data through your device settings.
+  Your display name and the stats tied to it are retained on our
+  Firebase backend until you delete your leaderboard entry (via the
+  App's Settings — "Delete Progress" or "Delete Account" — or by
+  contacting us, see above) or until the leaderboard feature is
+  discontinued. If you link the optional account backup, your
+  backed-up progress is retained on our Firebase backend until you
+  unlink/delete it from Settings inside the App or until the feature is
+  discontinued.
 </p>
 
 <h2>Changes to This Policy</h2>
@@ -155,8 +224,11 @@
 
 <h2>Contact Us</h2>
 <p>
-  If you have questions about this Privacy Policy, or want to request
-  deletion of a leaderboard entry, please contact us by email at:
+  You can delete your leaderboard entry and/or account backup at any
+  time from Settings inside the App — see above. If you have other
+  questions about this Privacy Policy, or need help with something
+  Settings can't handle (for example, you no longer have access to the
+  device), please contact us by email at:
   <a href="mailto:ayoub.rahmani.dev@gmail.com">ayoub.rahmani.dev@gmail.com</a>
 </p>
 
